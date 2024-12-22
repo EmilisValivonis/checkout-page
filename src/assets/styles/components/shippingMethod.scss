@@ -1,0 +1,46 @@
+/* Shipping Method Styles */
+
+.shipping-method {
+    @apply bg-white p-8 rounded-xl shadow-md mt-section-gap;
+}
+
+.shipping-title {
+    @apply text-heading font-bold mb-6;
+}
+
+.shipping-option {
+    @apply flex justify-between items-center py-2;
+}
+
+.shipping-option-content {
+    @apply flex items-start space-x-3;
+}
+
+/* Radio Button Styling */
+.shipping-option input[type="radio"] {
+    @apply w-5 h-5 border-2 border-gray-400 rounded-full appearance-none cursor-pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.shipping-option input[type="radio"]:checked {
+    @apply border-green-primary;
+    background-image: radial-gradient(circle, #2ecc71 40%, transparent 40%);
+}
+
+/* Add hover effect for clarity */
+.shipping-option input[type="radio"]:hover {
+    @apply border-green-primary;
+}
+
+/* Label and Description */
+.shipping-option .shipping-label {
+    @apply font-semibold text-gray-800;
+}
+
+.shipping-option .shipping-description {
+    @apply text-xs text-gray-500;
+}
+
+.shipping-price {
+    @apply font-medium text-gray-800;
+}

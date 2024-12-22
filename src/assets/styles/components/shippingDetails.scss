@@ -1,0 +1,73 @@
+/* Shipping Details Styles */
+
+.shipping-details {
+    @apply bg-white p-8 rounded-xl shadow-md;
+}
+
+.shipping-title {
+    @apply text-heading font-bold mb-6 uppercase;
+}
+
+.shipping-field {
+    @apply grid grid-cols-2 gap-4;
+}
+
+.shipping-label {
+    @apply text-label font-bold block mb-1;
+}
+
+.shipping-input {
+    @apply border border-gray-border p-input-padding rounded-custom w-full;
+
+    &::placeholder {
+        @apply text-gray-400;
+    }
+}
+
+/* Adjust Icon Wrapper for Email and Phone */
+.shipping-input-icon {
+    @apply relative flex items-center w-full;
+
+    img {
+        @apply absolute left-3 w-5 h-5;
+    }
+
+    input {
+        @apply pl-10 border border-gray-border rounded-custom p-input-padding w-full;
+
+        &::placeholder {
+            @apply text-gray-400;
+        }
+    }
+}
+
+.shipping-textarea {
+    @apply border border-gray-border p-input-padding rounded-custom w-full;
+
+    &::placeholder {
+        @apply text-gray-400;
+    }
+}
+
+/* Checkbox Styling */
+.shipping-checkbox {
+    @apply flex items-start space-x-2 mt-4;
+}
+
+.shipping-checkbox-input {
+    @apply w-5 h-5 border-2 border-gray-400 rounded-md appearance-none cursor-pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.shipping-checkbox-input:checked {
+    @apply border-green-primary bg-green-primary;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 12.5L2 9l1.5-1.5L5.5 9.5l6-6L13 5l-7.5 7.5z"/></svg>');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Label Alignment */
+.shipping-checkbox-label {
+    @apply text-sm text-gray-700;
+}

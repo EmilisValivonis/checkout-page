@@ -1,0 +1,91 @@
+body {
+    @apply bg-white;
+}
+
+.order-summary {
+    @apply bg-white p-6 rounded-xl shadow-md w-full;
+
+    .order-title {
+        @apply text-lg font-semibold mb-4 flex justify-between;
+
+        .item-count {
+            @apply text-sm text-gray-500;
+        }
+    }
+    /* Product List */
+    .product-list {
+        @apply space-y-4 pb-4 mb-4;
+    }
+
+    .product-item {
+        @apply flex items-start justify-between py-2 relative;
+
+        .product-image {
+            @apply w-32 h-32 rounded-md object-cover;
+        }
+
+        .product-info {
+            @apply flex-1 mx-4;
+
+            .product-name {
+                @apply font-medium text-gray-800;
+            }
+
+            .product-details {
+                @apply text-sm text-gray-500;
+            }
+
+            .product-controls {
+                @apply flex items-center mt-1 space-x-2;
+
+                .product-control-btn {
+                    @apply w-6 h-6 text-sm;
+                }
+            }
+        }
+
+        .product-price {
+            @apply font-medium text-gray-700;
+        }
+
+        .product-remove {
+            @apply absolute bottom-0 right-0 mb-2 mr-2;
+
+            img {
+                @apply w-6 h-6;
+            }
+        }
+    }
+
+    .product-separator {
+        @apply my-2;
+    }
+    /* Coupon Section */
+    .coupon-section {
+        @apply flex items-center space-x-2 mt-6 mb-4;
+
+        .coupon-input {
+            @apply p-2 rounded-md flex-1 text-sm;
+        }
+
+        .apply-button {
+            @apply bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400 text-sm;
+        }
+    }
+    /* Pricing Summary */
+    .pricing-summary {
+        @apply text-sm text-gray-700 space-y-2;
+
+        .pricing-row {
+            @apply flex justify-between;
+        }
+
+        .pricing-total {
+            @apply flex justify-between font-bold text-base pt-2 mt-2;
+        }
+    }
+}
+
+* {
+    @apply border-0;
+}
