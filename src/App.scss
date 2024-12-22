@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+/* Light Mode (default) */
+html,
+body {
+    @apply bg-white text-gray-800 transition-colors duration-300;
+}
+
+/* Dark Mode */
+html.dark,
+body.dark {
+    @apply bg-gray-900 text-gray-200 transition-colors duration-300;
+}
+
+/* Additional Global Styles */
+.container {
+    @apply bg-white dark:bg-gray-800 transition-colors duration-300;
+}
+/* Light Mode */
+input {
+    @apply bg-white text-gray-800 border-gray-border placeholder-gray-400;
+}
+
+/* Dark Mode */
+body.dark input {
+    @apply bg-dark-input-bg text-dark-text border-dark-gray-border placeholder-dark-placeholder;
+}
+
+body.dark textarea {
+    @apply bg-dark-input-bg text-dark-text border-dark-gray-border placeholder-dark-placeholder;
+}
+
+body.dark select {
+    @apply bg-dark-input-bg text-dark-text border-dark-gray-border placeholder-dark-placeholder;
+}
+
+body.dark button {
+    @apply bg-gray-700 text-dark-text hover:bg-gray-600;
+}

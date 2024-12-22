@@ -3,6 +3,7 @@ module.exports = {
         "./src/**/*.{js,jsx,ts,tsx}",
         "./src/assets/styles/**/*.{scss,css}"
     ],
+    darkMode: 'class',
     theme: {
         extend: {
             borderRadius: {
@@ -19,6 +20,10 @@ module.exports = {
                 'green-primary': '#2ecc71',
                 'green-hover': '#27ae60',
                 'gray-border': '#e5e7eb',
+                'dark-gray-border': '#44475a',
+                'dark-input-bg': '#2c2f36',
+                'dark-placeholder': '#b0b3b8',
+                'dark-text': '#e4e6eb'
             },
             fontSize: {
                 'label': '0.875rem',
